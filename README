@@ -1,0 +1,34 @@
+
+## Setup
+
+From PowerShell, open the downloaded folder and enter the project directory:
+
+```powershell
+cd .\2-1-sdc-soft-mod4-handson2-main
+```
+
+Then create and activate a virtual environment, install dependencies, and run the project:
+
+```powershell
+python -m venv venv
+.\venv\Scripts\Activate.ps1
+python -m pip install -r requirements.txt
+python main.py
+```
+
+If PowerShell blocks activation because script execution is disabled, run this once for the current terminal, then activate again:
+
+```powershell
+Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+.\venv\Scripts\Activate.ps1
+```
+
+On macOS or Linux, use these activation commands instead:
+
+```bash
+cd 2-1-sdc-soft-mod4-handson2-main
+python3 -m venv venv
+source venv/bin/activate
+python -m pip install -r requirements.txt
+python main.py
+```
